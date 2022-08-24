@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+
+<body>
+  <main>
+    <img class="logo" src="./assets/desktop/logo.svg" alt="">
+
+    <div class="callToActionCard">
+      <section class="callToAction__textWrapper">
+        <h1 class="callToAction__header">Publish your podcasts <span
+            class="callToAction__header--white">everywhere.</span></h1>
+        <p class="callToAction__body">
+          Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+          Apple Podcasts, Google Podcasts, Pocket Casts and more!
+        </p>
+      </section>
+
+      <div class="thirdPartyLogos thirdPartyLogos--mobile">
+        <img class="thirdPartyLogos__spotify" src="./assets/desktop/spotify.svg" alt="">
+        <img class="thirdPartyLogos__apple" src="./assets/desktop/apple-podcast.svg" alt="">
+        <img class="thirdPartyLogos__google" src="./assets/desktop/google-podcasts.svg" alt="">
+        <img class="thirdPartyLogos__pocketcast" src="./assets/desktop/pocket-casts.svg" alt="">
+      </div>
+
+      <form class="subscriptionForm" id="subscriptionForm" novalidate
+        action="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Grumpy_Cat_%2814556024763%29_%28cropped%29.jpg/650px-Grumpy_Cat_%2814556024763%29_%28cropped%29.jpg">
+        <div class="subscriptionForm__wrapper">
+          <input class="subscriptionForm__inputEmail" placeholder="Email address" type="email" name="emailAddress"
+            size="25" required>
+          <p
+            class="subscriptionForm__errorMessage subscriptionForm__errorMessage--mobile subscriptionForm__errorMessage--hide">
+            This is an error message</p>
+          <button class="formButton" type="submit">Request Access</button>
+        </div>
+        <p
+          class="subscriptionForm__errorMessage subscriptionForm__errorMessage--tablet-desktop subscriptionForm__errorMessage--hide">
+          This is an error message</p>
+      </form>
+
+      <div class="thirdPartyLogos thirdPartyLogos--desktop-tablet">
+        <img class="thirdPartyLogos__spotify" src="./assets/desktop/spotify.svg" alt="">
+        <img class="thirdPartyLogos__apple" src="./assets/desktop/apple-podcast.svg" alt="">
+        <img class="thirdPartyLogos__google" src="./assets/desktop/google-podcasts.svg" alt="">
+        <img class="thirdPartyLogos__pocketcast" src="./assets/desktop/pocket-casts.svg" alt="">
+      </div>
+    </div>
+    <img class="decorativeDots" src="./assets/desktop/bg-pattern-dots.svg" alt="">
+  </main>
+
+
+</body>
+
+</html>

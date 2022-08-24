@@ -1,0 +1,523 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+:root {
+    --brightGreen: #54E6AF;
+    --paleGreen: #B3FFE2;
+    --mediumBlueGray: #2C344B;
+    --darkBlue: #121725;
+    --white: #FFFFFF;
+    --lightBlueGray: #5A668A;
+    --lightGray: #C2CBE5;
+}
+
+body {
+    line-height: 1;
+    min-height: 100vh;
+    background-color: var(--darkBlue);
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 8.428125rem;
+    height: 3.5rem;
+}
+
+.callToActionCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.callToAction__header {
+    text-transform: uppercase;
+    color: var(--brightGreen);
+}
+
+.callToAction__header--white {
+    color: var(--white);
+}
+
+.callToAction__body {
+    color: var(--lightGray);
+    vertical-align: top;
+}
+
+.subscriptionForm__inputEmail {
+    border-style: none;
+    border-radius: 28px;
+    text-indent: 2rem;
+    padding: 0;
+    color: var(--white);
+    font-size: 0.875rem;
+    line-height: 2;
+}
+
+/* Overrides autofill styling changes */
+.subscriptionForm__inputEmail:focus {
+    box-shadow: 0 0 0 50px var(--mediumBlueGray) inset;
+    -webkit-text-fill-color: white;
+}
+
+.subscriptionForm__inputEmail::placeholder {
+    font-size: 0.875rem;
+    line-height: 2;
+    color: var(--white);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.subscriptionForm__errorMessage {
+    font-size: 0.75rem;
+    color: #FB3E3E;
+    font-weight: bold;
+    line-height: 1.166666666666667;
+    text-align: left;
+    text-indent: 2rem;
+}
+
+.subscriptionForm__errorMessage--hide {
+    visibility: hidden;
+}
+
+.subscriptionForm__errorMessage--display {
+    visibility: initial;
+}
+
+.formButton {
+    width: 10.125rem;
+    height: 2.875rem;
+    border-style: none;
+    border-radius: 28px;
+    background-color: var(--brightGreen);
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    color: var(--darkBlue);
+    font-size: 0.875rem;
+    line-height: 2;
+    padding: 0;
+}
+
+.formButton:hover {
+    background-color: var(--paleGreen);
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.2);
+    cursor: pointer;
+}
+
+.thirdPartyLogos {
+    display: flex;
+    align-items: center;
+    width: clamp(19.6875rem, 56.23409669vw + 6.507633588rem, 33.5rem);
+    height: clamp(1.0625rem, 3.053435115vw + 0.346851145rem, 1.8125rem);
+}
+
+.thirdPartyLogos__spotify {
+    height: clamp(1.0625rem, 3.053435115vw + 0.346851145rem, 1.8125rem);
+    width: clamp(3.5rem, 10.17811705vw + 1.114503817rem, 6rem);
+}
+
+.thirdPartyLogos__apple {
+    height: clamp(1.0625rem, 3.053435115vw + 0.346851145rem, 1.8125rem);
+    width: clamp(2.8125rem, 8.396946565vw + 0.8444656489rem, 4.875rem);
+
+}
+
+.thirdPartyLogos__google {
+    height: clamp(0.6875rem, 1.781170483vw + 0.2700381679rem, 1.125rem);
+    width: clamp(4.5625rem, 13.23155216vw + 1.461354962rem, 7.8125rem);
+}
+
+.thirdPartyLogos__pocketcast {
+    height: clamp(0.9375rem, 2.798982188vw + 0.2814885496rem, 1.625rem);
+    width: clamp(4.8125rem, 13.23155216vw + 1.770992366rem, 8.0625rem);
+}
+
+.decorativeDots {
+    height: 104px;
+    width: 232px;
+}
+
+@media (max-width: 767px) {
+    body::after {
+        background: url(./assets/mobile/image-host.jpg);
+        opacity: 0.1;
+        content: "";
+        background-repeat: no-repeat;
+        background-position: top center;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    main {
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3.875rem;
+        row-gap: 3.5625rem;
+    }
+
+    .callToActionCard {
+        align-items: center;
+        width: clamp(20.4375rem, 78.57142857vw + 2.022321429rem, 39.6875rem);
+        height: clamp(24.875rem, 28.31632653vw + 18.23836097rem, 31.8125rem);
+    }
+
+    .callToAction__header {
+        font-size: clamp(1.625rem, 7.260726073vw + -0.07673267327rem, 3rem);
+        text-align: center;
+        line-height: 1.461538461538462;
+    }
+
+    .callToAction__body {
+        font-size: clamp(0.9375rem, 0.7633587786vw + 0.7585877863rem, 1.125rem);
+        text-align: center;
+        line-height: 1.666666666666667;
+        margin-top: clamp(1rem, 3.816793893vw + 0.1054389313rem, 1.9375rem);
+    }
+
+    .subscriptionForm__inputEmail {
+        width: 20.4375rem;
+        height: 2.875rem;
+        background-color: var(--mediumBlueGray);
+        margin-top: 3rem;
+    }
+
+    .subscriptionForm__inputEmail:focus {
+        outline-color: var(--white);
+        outline-width: 2px;
+    }
+
+    .subscriptionForm__errorMessage--mobile {
+        height: 1rem;
+        vertical-align: middle;
+    }
+
+    .subscriptionForm__errorMessage--tablet-desktop {
+        display: none;
+    }
+
+
+    .formButton {
+        width: 20.375rem;
+    }
+
+    .thirdPartyLogos--mobile {
+        justify-content: space-between;
+        margin-top: 2.0625rem;
+    }
+
+    .thirdPartyLogos__apple {
+        position: relative;
+        left: 1px;
+    }
+
+    .thirdPartyLogos__google {
+        position: relative;
+        left: 7px;
+    }
+
+    .thirdPartyLogos--desktop-tablet {
+        display: none;
+    }
+
+    .decorativeDots {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    main {
+        position: relative;
+        height: 767px;
+        width: clamp(45.5625rem, 81.25vw + 6.5625rem, 79.6875rem);
+        justify-content: space-between;
+        align-items: flex-start;
+        background-image: url(./assets/tablet/image-host.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .logo {
+        margin-top: 50px;
+    }
+
+    .callToActionCard {
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: clamp(39.6875rem, 13.0952381vw + 33.40178571rem, 45.1875rem);
+        height: 31.8125rem;
+        background-color: var(--darkBlue);
+    }
+
+    .callToAction__header {
+        font-size: clamp(3rem, 0.5249343832vw + 2.777559055rem, 3.25rem);
+        line-height: 1.166666666666667;
+        text-align: left;
+    }
+
+    .callToAction__body {
+        font-size: 1.125rem;
+        width: 445px;
+        height: 84px;
+        text-align: left;
+        line-height: 1.555555555555556;
+        margin-top: 1.9375rem;
+    }
+
+    .thirdPartyLogos--mobile {
+        display: none;
+    }
+
+    .subscriptionForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 26.6875rem;
+        height: 3.5rem;
+        background-color: var(--mediumBlueGray);
+        border-style: none;
+        border-radius: 28px;
+        margin-top: 2.5rem;
+    }
+
+    .subscriptionForm__wrapper {
+        width: 100%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .subscriptionForm__wrapper:focus-within {
+        border-style: solid;
+        border-radius: 25px;
+        border-width: 2px;
+        border-color: var(--white);
+        margin-top: -2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .subscriptionForm__inputEmail {
+        height: 2.875rem;
+        background-color: hsl(0, 100%, 100%, 0);
+    }
+
+    .subscriptionForm__inputEmail:focus {
+        outline: none;
+    }
+
+    .subscriptionForm__inputEmail:focus~.formButton {
+        margin-right: 7px;
+    }
+
+    .subscriptionForm__errorMessage--mobile {
+        display: none;
+    }
+
+    .subscriptionForm__errorMessage--tablet-desktop {
+        vertical-align: top;
+        margin-top: 8px;
+    }
+
+    .formButton {
+        margin-right: 5px;
+    }
+
+    .thirdPartyLogos--desktop-tablet {
+        justify-content: flex-start;
+        margin-top: 4rem;
+    }
+
+    .thirdPartyLogos__apple,
+    .thirdPartyLogos__google {
+        margin-left: 40px;
+    }
+
+    .thirdPartyLogos__pocketcast {
+        margin-left: 28px;
+    }
+
+    .decorativeDots {
+        position: absolute;
+        left: -10px;
+        bottom: -257px;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        height: 48.1rem;
+        background-image: url(./assets/desktop/image-host.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+    .logo {
+        margin-top: 102px;
+    }
+
+    .callToAction__header {
+        line-height: 1.192307692307692;
+    }
+
+    .callToAction__body {
+        margin-top: 1.5rem;
+    }
+
+    .decorativeDots {
+        position: absolute;
+        left: initial;
+        right: 0;
+        bottom: -52px;
+    }
+}
