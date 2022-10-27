@@ -2,6 +2,22 @@
 
 ![Design preview for the Pod request access landing page coding challenge](./preview.jpg)
 
+## The challenge
+
+Your challenge is to build out this early access landing page and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+Your users should be able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
+- Receive an error message when the form is submitted if:
+  - The `Email address` field is empty should show "Oops! Please add your email"
+  - The email is not formatted correctly should show "Oops! Please check your email"
+
+Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+
 ## Plan of Attack
 
 This time I will try using BEM for the first time, as a way to approach styling in a more methodical fashion.
@@ -47,24 +63,5 @@ Autofill adds a white background, which I didn't want. This led me to discover t
 ***
 
 Finished the styling with no other real issues. Using BEM really helped me break down the structure into manageable parts and think about how each relates to the other. Plus, it helped me maintain discipline with naming that prevented me losing track of what does what.
-
-
-
-
-## The challenge
-
-Your challenge is to build out this early access landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-- Receive an error message when the form is submitted if:
-  - The `Email address` field is empty should show "Oops! Please add your email"
-  - The email is not formatted correctly should show "Oops! Please check your email"
-
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
 
